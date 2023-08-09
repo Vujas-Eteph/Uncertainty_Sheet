@@ -22,6 +22,19 @@
 - [Conference on Uncertainty in Artificial Intelligence (UAI)](https://www.auai.org/uai2023/) / Date of Conference July 31st, 2023 &rarr; August 4th, 2023
 - Check [MICCAI 2023](https://conferences.miccai.org/2023/en/) Proceedings / Date of Conference October 8th &rarr; 12th, 2023
 
+### TO READ : 
+(Ensemble Distribution Distillation)[https://proceedings.neurips.cc/paper/2021/file/2f4ccb0f7a84f335affb418aee08a6df-Paper.pdf]
+
+[ICML W 2021: Uncertainty and Robustness in Deep Learning](https://icml.cc/Conferences/2021/ScheduleMultitrack?event=8374)
+
+[ConfidNet](https://papers.nips.cc/paper_files/paper/2019/hash/757f843a169cc678064d9530d12a1881-Abstract.html)
+
+[TO READ](https://openaccess.thecvf.com/content/CVPR2023/papers/Tian_Modeling_the_Distributional_Uncertainty_for_Salient_Object_Detection_Models_CVPR_2023_paper.pdf)
+
+[Video](https://www.youtube.com/watch?v=gjpWm7LCV8U)
+
+[Laplacian Segmentation Networks: Improved Epistemic Uncertainty from Spatial Aleatoric Uncertainty](https://arxiv.org/pdf/2303.13123.pdf)
+
 -------
 ### Notes
 All Flashcards are located in this Markdown file[todo] and are ordered from newest to oldest papers.
