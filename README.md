@@ -1,5 +1,8 @@
 # Uncertainty Sheet
 
+**Preface**: This repository summarises valuable papers, packages, lectures and others I found during my research and *for* my research. Hence, this repository is not exhaustive. Other alternatives I highly recommend are [awesome-uncertainty-deeplearning](https://github.com/ENSTA-U2IS/awesome-uncertainty-deeplearning), *etc*.
+
+
 -------
 
 ### :fire: TODO:
@@ -20,27 +23,36 @@
 - Check [MICCAI 2023](https://conferences.miccai.org/2023/en/) Proceedings / Date of Conference October 8th &rarr; 12th, 2023
 
 -------
+### Notes
+All Flashcards are located in this Markdown file[todo] and are ordered from newest to oldest papers.
 
 ### Seminal Works on Uncertainty Quantification:
-  - Monte Carlo Dropout
-  - Deep Ensemble
-  - Test Time Data Augmentation
-  - Prior/Posterior/Evidential Deep Learning
-  - Laplace Approximation
-  - Bayes by Backprop
+  - **Monte Carlo Dropout** : [Paper](https://arxiv.org/pdf/1506.02142.pdf) - [Code] - [Cheat Sheet]
+  - **Deep Ensemble** : [Paper](https://arxiv.org/pdf/1612.01474.pdf) - [Code] - [Cheat Sheet]
+  - **Test Time Data Augmentation** : [Paper]() - [Code] - [Cheat Sheet]
+  - **Prior/Posterior** : [Paper](https://arxiv.org/pdf/1802.10501.pdf) - [Code] - [Cheat Sheet]
+  - **Evidential Deep Learning** : [Paper](https://papers.nips.cc/paper_files/paper/2018/hash/a981f2b708044d6fb4a71a1463242520-Abstract.html)
+  - **Laplace Approximation** : [Paper](https://arxiv.org/pdf/2106.14806.pdf) - [Code](https://github.com/AlexImmer/Laplace) - [Cheat Sheet]
+  - **Bayes by Backprop** : [Paper](https://arxiv.org/abs/1505.05424)
   - Bayesian Neural Network
 
 ### Useful Packages and Links
- - 🌠 [ENSTA Paris U2IS](https://github.com/ENSTA-U2IS) is a GitHub repo from the ENSTA ParisTech (Ecole d'ing) that may list some of their papers' about uncertainty
- - 🔥 [Torch Uncertainty](https://github.com/ENSTA-U2IS/torch-uncertainty) (*ICLR*) is a package designed to help you leverage uncertainty quantification techniques and make your neural networks more reliable.
- - 🔥 The [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/awesome-uncertainty-deeplearning) repo. is a collection of *AWESOME* papers, codes, books, and blogs about Uncertainty and Deep learning.
+ - 🌠[ENSTA Paris U2IS](https://github.com/ENSTA-U2IS) is a GitHub repo from the ENSTA ParisTech (Ecole d'ing) that may list some of their papers' about uncertainty
+ - 🔥[Torch Uncertainty](https://github.com/ENSTA-U2IS/torch-uncertainty) (*ICLR*) is a package designed to help you leverage uncertainty quantification techniques and make your neural networks more reliable.
+ - 🔥The [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/awesome-uncertainty-deeplearning) repo. is a collection of *AWESOME* papers, codes, books, and blogs about Uncertainty and Deep learning.
  - The [Gaussian processes](https://github.com/SheffieldML/GPy) framework in Python.
  - [Bayesian Benchmarks](https://github.com/secondmind-labs/bayesian_benchmarks)
  - [Laplace Package](https://github.com/AlexImmer/Laplace) is a package for Laplace Approximation in Neural Networks
 
+### Lectures/SS:
+- **Lectures**
+- **Summer Schools**
+  - [**Deep Bayes**](https://deepbayes.ru/2019/#materials)-[Youtube Videos](https://www.youtube.com/@bayesgroup/playlists?view=50&sort=dd&shelf_id=2)
+  - [Uncertainty estimation in supervised learning](https://www.youtube.com/watch?v=P4WUl7TDdLo&list=PLe5rNUydzV9QHe8VDStpU0o8Yp63OecdW&index=30)
+
 
 ### Current :fire: directions to go:
- - Packed-Ensemble
+ - [Packed-Ensemble](https://arxiv.org/pdf/2210.09184.pdf)
 
 
 
