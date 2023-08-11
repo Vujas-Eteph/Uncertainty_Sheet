@@ -35,6 +35,9 @@
 
 [Laplacian Segmentation Networks: Improved Epistemic Uncertainty from Spatial Aleatoric Uncertainty](https://arxiv.org/pdf/2303.13123.pdf)
 
+
+### Conferences to look for 👀
+ - [Uncertainty in Artificial Intelligence (UAI)](https://www.auai.org/)
 -------
 ### Notes
 All Flashcards are located in this Markdown file[todo] and are ordered from newest to oldest papers.
