@@ -74,7 +74,6 @@ All Flashcards are located in this Markdown file[todo] and are ordered from newe
 
 
 ### Papers
-- Packed Ensemble - [ICLR Paper 2023](https://openreview.net/forum?id=XXTyv1zD9zD) - [Code](https://github.com/ENSTA-U2IS/torch-uncertainty) - [Blog Post](https://medium.com/@adrien.lafage/make-your-neural-networks-more-reliable-with-packed-ensembles-7ad0b737a873) - [Flash Card]() - [Cheat Sheet is actually the blog post](https://medium.com/@adrien.lafage/make-your-neural-networks-more-reliable-with-packed-ensembles-7ad0b737a873)
-- 
-
-TO READ ON DEEP ENSEMBLE : BatchEnsembles and Masksembles 
+- Packed Ensemble - [ICLR Paper 2023](https://openreview.net/forum?id=XXTyv1zD9zD) - [Code](https://github.com/ENSTA-U2IS/torch-uncertainty) - [Blog Post from the author](https://medium.com/@adrien.lafage/make-your-neural-networks-more-reliable-with-packed-ensembles-7ad0b737a873) - [Flash Card]() - [Cheat Sheet is actually the blog post](https://medium.com/@adrien.lafage/make-your-neural-networks-more-reliable-with-packed-ensembles-7ad0b737a873)
+- Batch Ensemble - [ICLR Paper 2020](https://openreview.net/forum?id=Sklf1yrYDr) - [Code]() - [Flash Card]() - [Cheat Sheet]
+- Mask Ensemble - [CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Durasov_Masksembles_for_Uncertainty_Estimation_CVPR_2021_paper.html) - [Code](https://github.com/nikitadurasov/masksembles) - [Flash Card]() - [Cheat Sheet]()
