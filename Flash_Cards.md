@@ -13,3 +13,13 @@
    - Complete overlap leads to a single model.
    - Allowing a fair amount of overlap between the model's weights leads to MC dropout.
    - Avoiding mask overlaps leads to a Deep Ensemble method.
+
+
+### 2020
+ - **Batch Ensemble (ICLR 2020)**:
+   - Tackle the bottleneck of memory consumption and inference speed. 
+   - Leads to speed up and less memory consumption compared to Deep Ensemble.
+   - Instead of using multiple models, use one model (i.e., the weights $W$) to generate an ensemble of models. To generate the new weights of the model, multiply the weights with a generated mask $F_{i} = s_{i}r_{i}^T$ so that the new weights are $W_{i} = W \circ F_{i}$. Here, $s_{i}$,$r_{i}$ are learnable parameters during training.
+   - Hence they also don't need to store the masks $F_{i:N}$ (Similar to MC Dropout, in my opinion) but only the vectors that generate them, which takes less memory.
+   - The efficiency comes from the matrix multiplication/vectorization, where all the models can be passed in parallel for a prediction, and they all use the same "backbone model" to generate the ensemble methods.
+  
