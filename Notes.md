@@ -9,4 +9,8 @@
   - Distributional (data shift) uncertainty (the training data only captures a portion of the real-world distribution)
 - Use entropy or variance as an uncertainty estimator. (How does that work with the entropy ?)
 
+
+### Quantify the quality of the uncertainty:
+- Expected Calibration Error (ECE) [ref. Masksembles].
+
 # Make a Table with positive and negative elements of each uncertainty method (Take it from a survey paper)
