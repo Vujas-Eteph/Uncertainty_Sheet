@@ -9,9 +9,9 @@
   - Epistemic (model) uncertainty (can be reduced with mode training data).
   - Distributional (data shift) uncertainty (the training data only captures a portion of the real-world distribution)
 - Use entropy or variance as an uncertainty estimator. (How does that work with the entropy ?)
-- A good ensemble is a one where the menbers are accurante and produce independent errors [ref. BatchEnsemble].
-- DNNs trained with different initializations and SGD-like algos (although being the same model) lead the models to converge towards different local minimas (Due to the stochastic process and the high dimensionality of the optimization space).
-- 
+- A good ensemble is one where the members are accurate and produce independent errors [ref. BatchEnsemble].
+- DNNs trained with different initializations and SGD-like algos (although being the same model) lead the models to converge towards different local minima (Due to the stochastic process and the high dimensionality of the optimization space).
+- A postulate for Deep Ensembles to perform better than other methods in uncertainty quantification because they explore different modes, whereas other methods (i.e., Varional methods) explore the uncertainty only locally to one mode [ref. BatchEnsemble]. 
 
 
 ### Quantify the quality of the uncertainty:
