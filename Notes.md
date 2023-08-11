@@ -2,4 +2,7 @@
 *(If u notice an error (i.e., false explanation, statement, reference or whatever) please report it to me.)*
 
 - Deep Ensemble produces more reliable uncertainty estimations than MC Dropout [ref. Masksembles]
--  
+- Types of Uncertainties :
+  - Aleatoric (data) uncertainty (is inherent to the sensor (e.g., image resolution, ...)).
+  - Epistemic (model) uncertainty (can be reduced with mode training data).
+  - Distributional (data shift) uncertainty ($p(x|y)_{test set} != p(x|y)_{training set} $).
