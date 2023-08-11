@@ -5,4 +5,4 @@
 - Types of Uncertainties :
   - Aleatoric (data) uncertainty (is inherent to the sensor (e.g., image resolution, ...)).
   - Epistemic (model) uncertainty (can be reduced with mode training data).
-  - Distributional (data shift) uncertainty ($p(x|y)_{test set} != p(x|y)_{training set} $).
+  - Distributional (data shift) uncertainty (the training data only captures a portion of the real-world distribution)
