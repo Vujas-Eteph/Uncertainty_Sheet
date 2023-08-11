@@ -75,3 +75,6 @@ All Flashcards are located in this Markdown file[todo] and are ordered from newe
 
 ### Papers
 - Packed Ensemble - [ICLR Paper 2023](https://openreview.net/forum?id=XXTyv1zD9zD) - [Code](https://github.com/ENSTA-U2IS/torch-uncertainty) - [Blog Post](https://medium.com/@adrien.lafage/make-your-neural-networks-more-reliable-with-packed-ensembles-7ad0b737a873) - [Flash Card]() - [Cheat Sheet]()
+- 
+
+TO READ ON DEEP ENSEMBLE : BatchEnsembles and Masksembles 
