@@ -1,7 +1,10 @@
 ### 2023
  - **Packed-Ensembles(ICLR 2023)**
-   - Make Ensemble more memory and inference efficient
-   -  
+   - Make Ensemble more memory and inference efficient [Pytorch implementation](https://github.com/ENSTA-U2IS/torch-uncertainty) approach, which should be a general view of ensembles
+   - Create an ensemble of "small" NNs in a single NN using grouped convolutions. The parameters between the different sub-NNs are not shared (this is desired in DE, as it allows covering multiple local minimums better).
+   - The predictive uncertainty quantification is close DE, while allowing for faster training and inference times. (They achieve SOTA performance on DE benchmarks)
+   - When creating the subnetworks, consider the following hyperparameters, $\alpha$, a coefficient to "compensate" the number of parameters in the sub. NN, $\gamma$ the number of groups in the group convolution, and lastly $M$ the number of sub. NN.
+   - Important consider section 3.2 Computation Cost of the paper. On how to chose some hyperparameters. (Laso at the end of this page, the authors present an alternative for the first rearrange operation)
 
 ### 2021
  - **Masksembles (CVPR 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
