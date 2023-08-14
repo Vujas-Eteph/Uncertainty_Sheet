@@ -7,7 +7,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [ ] ~~Weighted Ensemble Self-Supervised Learning [[ICLR2023]](<https://arxiv.org/pdf/2211.09981.pdf>)~~
 - [ ] Agree to Disagree: Diversity through Disagreement for Better Transferability [[ICLR2023]](<https://arxiv.org/pdf/2202.04414.pdf>) - [[PyTorch]](<https://github.com/mpagli/Agree-to-Disagree>)
 - [x] Packed-Ensembles for Efficient Uncertainty Estimation [[ICLR2023]](<https://arxiv.org/abs/2210.09184>) - [[PyTorch]](<https://github.com/ENSTA-U2IS/torch-uncertainty>)
-- [] ~~Normalizing Flow Ensembles for Rich Aleatoric and Epistemic Uncertainty Modeling [[AAAI2023]](<https://arxiv.org/abs/2302.01312>)~~
+- [ ] ~~Normalizing Flow Ensembles for Rich Aleatoric and Epistemic Uncertainty Modeling [[AAAI2023]](<https://arxiv.org/abs/2302.01312>)~~
 - [ ] Deep Ensembles Work, But Are They Necessary? [[NeurIPS2022]](<https://arxiv.org/abs/2202.06985>)
 - [ ] FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation [[NeurIPS2022]](<https://arxiv.org/abs/2206.00050>)
 - [ ] Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks [[AAAI2022]](<https://arxiv.org/abs/2202.11782>)
