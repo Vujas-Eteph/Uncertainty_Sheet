@@ -4,12 +4,15 @@
   3) What can I use myself?
   4) What other references do I want to follow?
 
+
+Check : mixup regularization
+
 ----------
 ### 2023
  - **[Packed-Ensembles](https://openreview.net/forum?id=XXTyv1zD9zD) (ICLR 2023)**
    - **1) What did the authors try to accomplish?**: Make Ensemble more memory and inference efficient [Pytorch implementation](https://github.com/ENSTA-U2IS/torch-uncertainty) by proposing Packed-Ensembles(which should be a general view of ensembles) while maintaining near Deep-Ensemble performance.
    - **2) What were the key elements of the approach?**
-     [!FigurePE1](img/Packed_Ensemble_Architectur.png)     [!FigurePE2](img/Packed_Ensemble_Architectur_2.png)
+     ![FigurePE1](img/Packed_Ensemble_Architectur.png)![FigurePE2](img/Packed_Ensemble_Architectur_2.png)
      - Create an ensemble of "small" NNs in a single NN using grouped convolutions. The parameters between the different sub-NNs are not shared (this is desired in DE, as it allows covering multiple local minimums better).
      - The predictive uncertainty quantification is close DE, while allowing for faster training and inference times. (They achieve SOTA performance on DE benchmarks)
      - When creating the subnetworks, consider the following hyperparameters, $\alpha$, a coefficient to "compensate" the number of parameters in the sub. NN, $\gamma$ the number of groups in the group convolution, and lastly $M$ the number of sub. NN.
@@ -17,6 +20,8 @@
      - Packed Ensemble (hence grouped convolution) as *80% of the parameters in NN are not needed (find reference again in the paper)*
    - **4) What other references do I want to follow?**
      - Important consider section 3.2 Computation Cost of the paper. On how to chose some hyperparameters. (Also at the end of this page, the authors present an alternative for the first rearrange operation)
+     - ResNeXt
+     - Take also a look at [ConvNext](https://github.com/open-mmlab/mmdetection/tree/main/configs/convnext)
 
 ----------
 ### 2021
@@ -25,7 +30,7 @@
       - Introduce a structured approach for dropping model parameters (versus MC Dropout, which is random).
       - Acts as a continuum between single models, deep-ensemble and MC dropout.
    - **2) What were the key elements of the approach?**
-      [!FigureME1](img/Masksemble.png)  
+      ![FigureME1](img/Masksemble.png)  
       - 3 parameters to look at when generating masks:
         - N: Number of masks
         - M: Number of ones in each mask
@@ -47,7 +52,7 @@
    - **1) What did the authors try to accomplish?**:
       - Instead of using multiple models, use one model (i.e., the weights $W$) to generate an ensemble of models. 
    - **2) What were the key elements of the approach?**
-    [!FigureBE1](img/BatchEnsemble.png)
+    ![FigureBE1](img/BatchEnsemble.png)
      - To generate the new weights of the model, multiply the weights with a generated mask $F_{i} = s_{i}r_{i}^T$ so that the new weights are $W_{i} = W \circ F_{i}$. Here, $s_{i}$,$r_{i}$ are learnable parameters during training.
      - Hence they also don't need to store the masks $F_{i:N}$ (Similar to MC Dropout, in my opinion) but only the vectors that generate them, which takes less memory.
      - The efficiency comes from the matrix multiplication/vectorization, where all the models can be passed in parallel for a prediction, and they all use the same "backbone model" to generate the ensemble methods.
