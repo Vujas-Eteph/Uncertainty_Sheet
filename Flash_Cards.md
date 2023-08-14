@@ -1,3 +1,9 @@
+### Template for a Flash Card
+  1) What did the authors try to accomplish?
+  2) What were the key elements of the approach?
+  3) What can I use myself?
+  4) What other references do I want to follow?
+
 ### 2023
  - **Packed-Ensembles(ICLR 2023)**
    - Make Ensemble more memory and inference efficient [Pytorch implementation](https://github.com/ENSTA-U2IS/torch-uncertainty) approach, which should be a general view of ensembles
