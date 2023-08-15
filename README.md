@@ -65,7 +65,10 @@ All Flashcards are located in this Markdown file[todo] and are ordered from newe
 - **Summer Schools**
   - [**Deep Bayes**](https://deepbayes.ru/2019/#materials)-[Youtube Videos](https://www.youtube.com/@bayesgroup/playlists?view=50&sort=dd&shelf_id=2)
   - [Uncertainty estimation in supervised learning](https://www.youtube.com/watch?v=P4WUl7TDdLo&list=PLe5rNUydzV9QHe8VDStpU0o8Yp63OecdW&index=30)
-
+- **Some Theroy along the way**
+  - [Dempster–Shafer theory (a.k.a. evidence theory)](https://en.wikipedia.org/wiki/Dempster%E2%80%93Shafer_theory), on how to combine multiple probabilites (beliefs) in a single one (if I understood correctly)
+  - [Transferable belief model](https://en.wikipedia.org/wiki/Transferable_belief_model), tackles the DST in an open-world setting, so no normalization, and goes against Bayes Rule ? Not sure I understood it yet.
+  - [Lipschitz constant](https://encyclopediaofmath.org/wiki/Lipschitz_constant)
 
 ### Current :fire: directions to go:
  - [Packed-Ensemble](https://arxiv.org/pdf/2210.09184.pdf)
