@@ -12,7 +12,7 @@ Check : mixup regularization
  - **[Packed-Ensembles](https://openreview.net/forum?id=XXTyv1zD9zD) (ICLR 2023)**
    - **1) What did the authors try to accomplish?**: Make Ensemble more memory and inference efficient [Pytorch implementation](https://github.com/ENSTA-U2IS/torch-uncertainty) by proposing Packed-Ensembles(which should be a general view of ensembles) while maintaining near Deep-Ensemble performance.
    - **2) What were the key elements of the approach?**:
-     ![FigurePE1](img/Packed_Ensemble_Architectur.png)![FigurePE2](img/Packed_Ensemble_Architectur_2.png)
+   ![FigurePE1](img/Packed_Ensemble_Architectur.png)![FigurePE2](img/Packed_Ensemble_Architectur_2.png)
      - Create an ensemble of "small" NNs in a single NN using grouped convolutions. The parameters between the different sub-NNs are not shared (this is desired in DE, as it allows covering multiple local minimums better).
      - The predictive uncertainty quantification is close DE, while allowing for faster training and inference times. (They achieve SOTA performance on DE benchmarks)
      - When creating the subnetworks, consider the following hyperparameters, $\alpha$, a coefficient to "compensate" the number of parameters in the sub. NN, $\gamma$ the number of groups in the group convolution, and lastly $M$ the number of sub. NN.
@@ -30,7 +30,7 @@ Check : mixup regularization
       - Introduce a structured approach for dropping model parameters (versus MC Dropout, which is random).
       - Acts as a continuum between single models, deep-ensemble and MC dropout.
    - **2) What were the key elements of the approach?**:
-      ![FigureME1](img/Masksemble.png)  
+   ![FigureME1](img/Masksemble.png)  
       - 3 parameters to look at when generating masks:
         - N: Number of masks
         - M: Number of ones in each mask
@@ -48,6 +48,7 @@ Check : mixup regularization
     - **1) What did the authors try to accomplish?**: 
       - Use Deep Ensemble of sub-networks for prediction with no overhead on the processing time (memory too). Hence only one forward pass for the prediction, and the uncertainty.  
     - **2) What were the key elements of the approach?**:
+  ![FigureMIMO1](img/MIMO.png)  
       - Create diverse subnetworks (we want diversity of the models in the Deep Ensemble to cover more distant local minimas) inside a bigger network (Also NN are heavily overparameterized, so we can cut approx 80% of the parameters down [find ref in paper]).
       - Inference : Use multiple input and predict multiple outputs. Actually for each subnetwork M, use the same input, but predict M different $\hat{y}$. Take the mean and std to get prediction and uncertainty. (Simple)
       - Training: To ensure that the subnetworks are diverse, during training, train the subnetwork like you would a typicall NN. Don't give them the same images in the batch, as this would lead to the same model.... We want the network to share features, hence the training process is important. (Deeper Look)
@@ -61,7 +62,7 @@ Check : mixup regularization
    - **1) What did the authors try to accomplish?**:
       - Instead of using multiple models, use one model (i.e., the weights $W$) to generate an ensemble of models. 
    - **2) What were the key elements of the approach?**:
-    ![FigureBE1](img/BatchEnsemble.png)
+  ![FigureBE1](img/BatchEnsemble.png)
      - To generate the new weights of the model, multiply the weights with a generated mask $F_{i} = s_{i}r_{i}^T$ so that the new weights are $W_{i} = W \circ F_{i}$. Here, $s_{i}$,$r_{i}$ are learnable parameters during training.
      - Hence they also don't need to store the masks $F_{i:N}$ (Similar to MC Dropout, in my opinion) but only the vectors that generate them, which takes less memory.
      - The efficiency comes from the matrix multiplication/vectorization, where all the models can be passed in parallel for a prediction, and they all use the same "backbone model" to generate the ensemble methods.
