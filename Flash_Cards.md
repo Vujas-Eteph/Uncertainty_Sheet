@@ -9,6 +9,21 @@ Check : mixup regularization
 
 ----------
 ### 2023
+ - **[Agree to Disagree: Diversity through Disagreement for Better Transferability (D-BAT)](https://openreview.net/forum?id=K7CbYQbyYhY) (ICLR 2023)**
+   - **1) What did the authors try to accomplish?**: 
+     - Propose an new training approach to promote diversity inside the Deep Ensemble structure called **D-BAT** (**Diversity-By-disAgreement Training**). The core idea is for the models, to learn a diverse set of features, which still allows the subnetwork to have the same prediction (agree) on sampled that have been seen during training, but disagree on the OOD samples (Data distribution shift).
+   - **2) What were the key elements of the approach?**:  
+   ![FigureDBAT1](./img/DBAT1.png)  
+     - Promote the networks to learn features that a diverse from each other(Not relying on the same familty of featreus e.g., one model would learn shape cues, while another texture cues.).
+     - Leads the model to agree on the samples from the training data, but hopefully disagree on the OOD samples.
+     - The proposed Loss (Look deeper into it). (But seems to also rely on an OOD dataset ?  Not sure need further reading on this aspect)
+    ![FigureDBAT2](./img/DBAT2.png)  
+   - **3) What can I use myself?**:
+     - The training strategy **D-BAT**
+   - **4) What other references do I want to follow?**: 
+     - Simplicity bias: Leads the model to learn and use simple representations.
+     - Groupe theory : 
+
  - **[Packed-Ensembles](https://openreview.net/forum?id=XXTyv1zD9zD) (ICLR 2023)**
    - **1) What did the authors try to accomplish?**: Make Ensemble more memory and inference efficient [Pytorch implementation](https://github.com/ENSTA-U2IS/torch-uncertainty) by proposing Packed-Ensembles(which should be a general view of ensembles) while maintaining near Deep-Ensemble performance.
    - **2) What were the key elements of the approach?**:  
