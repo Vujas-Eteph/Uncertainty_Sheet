@@ -10,7 +10,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [ ] ~~Normalizing Flow Ensembles for Rich Aleatoric and Epistemic Uncertainty Modeling [[AAAI2023]](<https://arxiv.org/abs/2302.01312>)~~
 - [ ] Deep Ensembles Work, But Are They Necessary? [[NeurIPS2022]](<https://arxiv.org/abs/2202.06985>)
 - [ ] FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation [[NeurIPS2022]](<https://arxiv.org/abs/2206.00050>)
-- [ ] Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks [[AAAI2022]](<https://arxiv.org/abs/2202.11782>)
+- [x] Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks [[AAAI2022]](<https://arxiv.org/abs/2202.11782>)
 - [ ] ~~Deep Ensembling with No Overhead for either Training or Testing: The All-Round Blessings of Dynamic Sparsity [[ICLR2022]](<https://arxiv.org/abs/2106.14568>) - [[PyTorch]](<https://github.com/VITA-Group/FreeTickets>)~~
 - [ ] ~~On the Usefulness of Deep Ensemble Diversity for Out-of-Distribution Detection [[ECCVW2022]](<https://arxiv.org/abs/2207.07517>)~~
 - [ ] Robustness via Cross-Domain Ensembles [[ICCV2021]](<https://arxiv.org/abs/2103.10919>) - [[PyTorch]](<https://github.com/EPFL-VILAB/XDEnsembles>)
@@ -28,6 +28,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [ ] ~~Diversity with Cooperation: Ensemble Methods for Few-Shot Classification [[ICCV2019]](<https://arxiv.org/abs/1903.11341>)~~
 - [ ] ~~High-Quality Prediction Intervals for Deep Learning: A Distribution-Free, Ensembled Approach [[ICML2018]](<https://arxiv.org/abs/1802.07167>) - [[TensorFlow]](<https://github.com/TeaPearce/Deep_Learning_Prediction_Intervals>)~~
 - [ ] ~~Simple and scalable predictive uncertainty estimation using deep ensembles [[NeurIPS2017]](<https://arxiv.org/abs/1612.01474>)~~
+- [ ] Diverse Lottery Tickets Boost Ensemble from a Single Pretrained Mode [[AAAI Not sure 2022]](https://openreview.net/pdf?id=rCzgE3zHL-q)
 
 
 ## Auxiliary-Methods/Learning-loss-distributions

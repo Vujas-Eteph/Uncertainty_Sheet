@@ -15,6 +15,7 @@
 - List N=3 courses that help understand the material presented in some of the papers
 - Make a list of top profiles to look for and to follow on social media
 - Make Flash Cards for each paper and Cheat sheets for some papers
+- Make a .bib file (generate automatically)
 
 
 ### 📰 Top News :

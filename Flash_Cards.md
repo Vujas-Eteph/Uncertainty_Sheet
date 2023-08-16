@@ -1,14 +1,14 @@
 ### Template for a Flash Card
-  1) What did the authors try to accomplish?
-  2) What were the key elements of the approach?
-  3) What can I use myself?
-  4) What other references do I want to follow?
+  - 1) What did the authors try to accomplish?
+  - 2) What were the key elements of the approach?
+  - 3) What can I use myself?
+  - 4) What other references do I want to follow?
 
 
 Check : mixup regularization
 
-----------
-### 2023
+
+## 2023
  - **[Agree to Disagree: Diversity through Disagreement for Better Transferability (D-BAT)](https://openreview.net/forum?id=K7CbYQbyYhY) (ICLR 2023)**
    - **1) What did the authors try to accomplish?**: 
      - Propose an new training approach to promote diversity inside the Deep Ensemble structure called **D-BAT** (**Diversity-By-disAgreement Training**). The core idea is for the models, to learn a diverse set of features, which still allows the subnetwork to have the same prediction (agree) on sampled that have been seen during training, but disagree on the OOD samples (Data distribution shift).
@@ -39,8 +39,24 @@ Check : mixup regularization
      - ResNeXt
      - Take also a look at [ConvNext](https://github.com/open-mmlab/mmdetection/tree/main/configs/convnext)
 
-----------
-### 2021
+## 2022
+ - **[Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks (PAT Ensemble) (AAAI 2022)](https://arxiv.org/pdf/2202.11782.pdf)**:
+   - **1) What did the authors try to accomplish?**
+     - Reduce computational costs (Especially for training time) (Low cost Ensemble), while still obtaining a robust ensemble and efficient ensemble.
+   - **2) What were the key elements of the approach?**
+     - i) Train a parent (Large) DNN (That is trained on the datasets of interest). ii)Create children $M$ NN based on the parent DNN by using pruning the parent DNN $M$ different ways. iii) Fine-tune the children networks on a small number of epochs only.
+     ![FigurePAT1](./img/PAT2.png)  
+     - The authors make sure that every child network convergence to a unique local minima(how to they ensure that?) after the fine-tuning. (Diversity in DE is very important. Kinda similar to monte carlo dropout with the idea to retrain the NN afterwards)
+     ![FigurePAT1](./img/PAT1.png)  
+   - **3) What can I use myself?**
+     - The approach to generate a chil networks/ training an ensemble with a fast and low cost effort.
+   - **4) What other references do I want to follow?**
+     - Pseudo-Ensembles, Temporal-Ensembles, Evolutionary-Ensembles.
+     - Anti-random pruning.
+     - One-Cycle Tuning. 
+     - Loss Landscape visualization.
+ - 
+## 2021
  - **[Masksembles](https://openaccess.thecvf.com/content/CVPR2021/html/Durasov_Masksembles_for_Uncertainty_Estimation_CVPR_2021_paper.html) (CVPR 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
    - **1) What did the authors try to accomplish?**:
       - Introduce a structured approach for dropping model parameters (versus MC Dropout, which is random).
@@ -71,9 +87,7 @@ Check : mixup regularization
     - **3) What can I use myself?**:
       - Creating subnework and the training regiment proposed to obtain diverse subnetworks. (Use in combination with Packed Ensemble?)
     - **4) What other references do I want to follow?**:
-
-----------
-### 2020
+## 2020
  - **[Batch Ensemble](https://openreview.net/forum?id=Sklf1yrYDr) (ICLR 2020)**:
    - **1) What did the authors try to accomplish?**:
       - Instead of using multiple models, use one model (i.e., the weights $W$) to generate an ensemble of models. 
