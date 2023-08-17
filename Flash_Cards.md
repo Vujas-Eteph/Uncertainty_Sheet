@@ -40,6 +40,20 @@ Check : mixup regularization
      - Take also a look at [ConvNext](https://github.com/open-mmlab/mmdetection/tree/main/configs/convnext)
 
 ## 2022
+- **[Deep Ensembles Work, But Are They Necessary?(NeurIPS 2022)](https://openreview.net/forum?id=wg_kD_nyAF)**
+   - *Notes from the reviewers*: Seems that the  experimental setting has some caveats in it... Careful handling this paper, as the reviewing process for this one was difficult...
+   - **1) What did the authors try to accomplish?**
+     - Compare a Deep Ensemble against a larger NN on the uncertainty quantification/robustness against OOD and prediction capabilities.
+     - Hence is there an advantage to Deep Ensemble against a slightly Larger model? 
+   - **2) What were the key elements of the approach?**
+     - Evaluate empirically Deep Ensemble against Larger NNs
+   - **3) What can I use myself?**
+     - Nothing ?
+   - **4) What other references do I want to follow?**
+     - On power laws of Deep Ensembles [NeurIPS 2020]
+     - When and how to build CNN ensembles [ICLR 2020]
+
+
  - **[Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks (PAT Ensemble) (AAAI 2022)](https://arxiv.org/pdf/2202.11782.pdf)**:
    - **1) What did the authors try to accomplish?**
      - Reduce computational costs (Especially for training time) (Low cost Ensemble), while still obtaining a robust ensemble and efficient ensemble.
