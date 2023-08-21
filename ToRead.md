@@ -13,7 +13,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [x] Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks [[AAAI2022]](<https://arxiv.org/abs/2202.11782>)
 - [ ] ~~Deep Ensembling with No Overhead for either Training or Testing: The All-Round Blessings of Dynamic Sparsity [[ICLR2022]](<https://arxiv.org/abs/2106.14568>) - [[PyTorch]](<https://github.com/VITA-Group/FreeTickets>)~~
 - [ ] ~~On the Usefulness of Deep Ensemble Diversity for Out-of-Distribution Detection [[ECCVW2022]](<https://arxiv.org/abs/2207.07517>)~~
-- [ ] Robustness via Cross-Domain Ensembles [[ICCV2021]](<https://arxiv.org/abs/2103.10919>) - [[PyTorch]](<https://github.com/EPFL-VILAB/XDEnsembles>)
+- [x] Robustness via Cross-Domain Ensembles [[ICCV2021]](<https://arxiv.org/abs/2103.10919>) - [[PyTorch]](<https://github.com/EPFL-VILAB/XDEnsembles>)
 - [x] (MiMO) Training Independent subnetworks for robust prediction [ICLR2021](https://openreview.net/forum?id=OGg9XnKxFAH)
 - [x] Masksembles for Uncertainty Estimation [[CVPR2021]](<https://nikitadurasov.github.io/projects/masksembles/>) - [[PyTorch/TensorFlow]](<https://github.com/nikitadurasov/masksembles>)
 - [ ] Uncertainty Quantification and Deep Ensembles [[NeurIPS2021]](<https://openreview.net/forum?id=wg_kD_nyAF>)

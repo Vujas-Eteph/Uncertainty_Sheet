@@ -83,6 +83,21 @@ Some concepts :
      - Snapshot ensembles by Huang et al. 2017
      - Temperature Scaling by Guo et al. 2017
 ## 2021
+ - **[Robustness via Cross-Domain Ensembles](https://crossdomain-ensembles.epfl.ch/) (ICCV 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
+   - **1) What did the authors try to accomplish?**:
+     - Want to add robustness to their predictions by leveraging "middle domains".
+   - **2) What were the key elements of the approach?**:  
+     ![FigurePAT1](./img/XDE1.png)  
+     - From the input image, extract middle domains. 
+     - Push the middle domains through the NN, and obtain a mean and a variance (Based on the LLH of the Laplacian) during training.
+     - Use the uncertainty to weight the predictions of each middle domain (passed through the same NN I think), to obtain a more robust prediction. Uncertainty is quantified on pixel-level.
+     - Calibrate the NN with further training, using the uncertainty, with a calibration Sigma training.
+    - **3) What can I use myself?**:
+      - The calibration principle
+      - Using the middle domain as inspiration when employing test time data augmentation.
+      - The lossm where a second head would estimate the uncertainty.
+    - **4) What other references do I want to follow?**:  
+
  - **[Masksembles](https://openaccess.thecvf.com/content/CVPR2021/html/Durasov_Masksembles_for_Uncertainty_Estimation_CVPR_2021_paper.html) (CVPR 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
    - **1) What did the authors try to accomplish?**:
       - Introduce a structured approach for dropping model parameters (versus MC Dropout, which is random).
