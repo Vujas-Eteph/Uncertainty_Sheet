@@ -5,7 +5,10 @@
   - 4) What other references do I want to follow?
 
 
-Check : mixup regularization
+Some concepts : 
+ - The lottery ticket hypothesis:
+ - Calibration Error
+ - mixup regularitation::
 
 
 ## 2023
@@ -69,7 +72,16 @@ Check : mixup regularization
      - Anti-random pruning.
      - One-Cycle Tuning. 
      - Loss Landscape visualization.
- - 
+- **[FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation (NeurIPS 2022)](https://openreview.net/forum?id=wg_kD_nyAF)**
+   - **1) What did the authors try to accomplish?**
+     - The authors create an implicit Deep Ensemble approach by training Feature-wise Linear Modulation (FiLM) "layers" (conditional batchnorm), basically replace BatchNorm found in NN with those modules. 
+   - **2) What were the key elements of the approach?**
+     - Here the ensembles share the weights of the backbone, but the FiLM modules add the diversity.
+   - **3) What can I use myself?**
+     - The FiLM layer concept
+   - **4) What other references do I want to follow?**
+     - Snapshot ensembles by Huang et al. 2017
+     - Temperature Scaling by Guo et al. 2017
 ## 2021
  - **[Masksembles](https://openaccess.thecvf.com/content/CVPR2021/html/Durasov_Masksembles_for_Uncertainty_Estimation_CVPR_2021_paper.html) (CVPR 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
    - **1) What did the authors try to accomplish?**:

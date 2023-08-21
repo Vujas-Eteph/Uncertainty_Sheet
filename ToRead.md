@@ -9,7 +9,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [x] Packed-Ensembles for Efficient Uncertainty Estimation [[ICLR2023]](<https://arxiv.org/abs/2210.09184>) - [[PyTorch]](<https://github.com/ENSTA-U2IS/torch-uncertainty>)
 - [ ] ~~Normalizing Flow Ensembles for Rich Aleatoric and Epistemic Uncertainty Modeling [[AAAI2023]](<https://arxiv.org/abs/2302.01312>)~~
 - [x] Deep Ensembles Work, But Are They Necessary? [[NeurIPS2022]](<https://arxiv.org/abs/2202.06985>)
-- [ ] FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation [[NeurIPS2022]](<https://arxiv.org/abs/2206.00050>)
+- [x] FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation [[NeurIPS2022]](<https://arxiv.org/abs/2206.00050>)
 - [x] Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks [[AAAI2022]](<https://arxiv.org/abs/2202.11782>)
 - [ ] ~~Deep Ensembling with No Overhead for either Training or Testing: The All-Round Blessings of Dynamic Sparsity [[ICLR2022]](<https://arxiv.org/abs/2106.14568>) - [[PyTorch]](<https://github.com/VITA-Group/FreeTickets>)~~
 - [ ] ~~On the Usefulness of Deep Ensemble Diversity for Out-of-Distribution Detection [[ECCVW2022]](<https://arxiv.org/abs/2207.07517>)~~
