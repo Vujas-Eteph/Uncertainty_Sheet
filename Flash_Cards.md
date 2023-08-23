@@ -43,7 +43,7 @@ Some concepts :
      - Take also a look at [ConvNext](https://github.com/open-mmlab/mmdetection/tree/main/configs/convnext)
 
 ## 2022
-- **[Deep Ensembles Work, But Are They Necessary?(NeurIPS 2022)](https://openreview.net/forum?id=wg_kD_nyAF)**
+- **[Deep Ensembles Work, But Are They Necessary?](https://openreview.net/forum?id=wg_kD_nyAF) (NeurIPS 2022)**
    - *Notes from the reviewers*: Seems that the  experimental setting has some caveats in it... Careful handling this paper, as the reviewing process for this one was difficult...
    - **1) What did the authors try to accomplish?**
      - Compare a Deep Ensemble against a larger NN on the uncertainty quantification/robustness against OOD and prediction capabilities.
@@ -57,7 +57,7 @@ Some concepts :
      - When and how to build CNN ensembles [ICLR 2020]
 
 
- - **[Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks (PAT Ensemble) (AAAI 2022)](https://arxiv.org/pdf/2202.11782.pdf)**:
+ - **[Prune and Tune Ensembles: Low-Cost Ensemble Learning With Sparse Independent Subnetworks (PAT Ensemble)](https://arxiv.org/pdf/2202.11782.pdf) (AAAI 2022)**:
    - **1) What did the authors try to accomplish?**
      - Reduce computational costs (Especially for training time) (Low cost Ensemble), while still obtaining a robust ensemble and efficient ensemble.
    - **2) What were the key elements of the approach?**
@@ -72,16 +72,26 @@ Some concepts :
      - Anti-random pruning.
      - One-Cycle Tuning. 
      - Loss Landscape visualization.
-- **[FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation (NeurIPS 2022)](https://openreview.net/forum?id=wg_kD_nyAF)**
+- **[FiLM-Ensemble: Probabilistic Deep Learning via Feature-wise Linear Modulation](https://openreview.net/forum?id=wg_kD_nyAF) (NeurIPS 2022)**
    - **1) What did the authors try to accomplish?**
      - The authors create an implicit Deep Ensemble approach by training Feature-wise Linear Modulation (FiLM) "layers" (conditional batchnorm), basically replace BatchNorm found in NN with those modules. 
-   - **2) What were the key elements of the approach?**
+   - **2) What were the key elements of the approach?** (No visual explanation (i.e., figure) in the paper)
      - Here the ensembles share the weights of the backbone, but the FiLM modules add the diversity.
    - **3) What can I use myself?**
      - The FiLM layer concept
    - **4) What other references do I want to follow?**
      - Snapshot ensembles by Huang et al. 2017
      - Temperature Scaling by Guo et al. 2017
+- **[Diverse Lottery Tickets Boost Ensemble from a Single Pretrained Model](https://aclanthology.org/2022.bigscience-1.4/) (ACL Anthology 2022)** [Video](https://aclanthology.org/2022.bigscience-1.4.mp4)
+  - **Note**: I'm probably not gonna follow the ideas of that paper as the results are mitigated..., but since I read it a little...
+   - **1) What did the authors try to accomplish?**
+     - Make the ensembles more diverse, by fine-tuning sub-networks after pruning them from the same-backbone network
+   - **2) What were the key elements of the approach?**
+     - Pruning and Fine-tuning
+   - **3) What can I use myself?**
+     - Nothing
+   - **4) What other references do I want to follow?**
+     - None
 ## 2021
  - **[Robustness via Cross-Domain Ensembles](https://crossdomain-ensembles.epfl.ch/) (ICCV 2021)** [Video](https://www.youtube.com/watch?v=YWKVdn3kLp0):
    - **1) What did the authors try to accomplish?**:
@@ -128,6 +138,18 @@ Some concepts :
     - **3) What can I use myself?**:
       - Creating subnework and the training regiment proposed to obtain diverse subnetworks. (Use in combination with Packed Ensemble?)
     - **4) What other references do I want to follow?**:
+      - None
+
+ - **[Uncertainty Quantification and Deep Ensemble](https://openreview.net/forum?id=wg_kD_nyAF) (NeurIPS 2021)**
+    - **1) What did the authors try to accomplish?**: 
+      - That Deep Ensemble don't necessarily lead to better calibration properties.
+    - **2) What were the key elements of the approach?**:  
+      - Study the impact of temperature scaling, mixup during training and deep ensemble.
+      - Deep ensemble when using small datasets does not lead to better performance (I suppose the models where not enough diverse)
+    - **3) What can I use myself?**:
+      - Nothing
+    - **4) What other references do I want to follow?**:
+      - None
 ## 2020
  - **[Batch Ensemble](https://openreview.net/forum?id=Sklf1yrYDr) (ICLR 2020)**:
    - **1) What did the authors try to accomplish?**:
@@ -138,5 +160,34 @@ Some concepts :
      - Hence they also don't need to store the masks $F_{i:N}$ (Similar to MC Dropout, in my opinion) but only the vectors that generate them, which takes less memory.
      - The efficiency comes from the matrix multiplication/vectorization, where all the models can be passed in parallel for a prediction, and they all use the same "backbone model" to generate the ensemble methods.
     - **3) What can I use myself?**:
+      - Read again
     - **4) What other references do I want to follow?**:
+      - Read again
+  - **[Hyperparameter Ensembles for Robustness and Uncertainty Quantification](https://proceedings.neurips.cc/paper/2020/hash/481fbfa59da2581098e841b7afc122f1-Abstract.html) (NeurIPS 2020)**:   
+    - **1) What did the authors try to accomplish?**:
+      - Propose Hyper-Deep Ensemble.
+      - Design ensembles not only by re-training the NN with different initialization and batches (to promote diversity) but also by modifying the hyper-parameters of every NN in the Deep Ensemble.
+    - **2) What were the key elements of the approach?**:  
+    ![FigureHDE](./img/Hyper_Deep_Ensemble.png) 
+      - Builds on batch ensembles.
+      - Add diversity to the DE, by using different weights but also hyperparameters (Number of layers, activation functions ??) (they combine random search and greedy selection to find the hyper-parameters)
+    - **3) What can I use myself?**:
+      - The idea to add diversity also on the hyper-parameters of the NNs composing the DE.
+    - **4) What other references do I want to follow?**:
+      - Cyclical learning rate.
+  
+  - **[Uncertainty in Neural Networks: Approximately Bayesian Ensembling](https://arxiv.org/abs/1810.05546) (AISTATS 2020)** [**Video**](https://www.youtube.com/watch?v=eBKqvgecRjc): 
+    - **1) What did the authors try to accomplish?**:
+      - Use Deep Ensemble as an approximation to Bayesian Neural Networks
+    - **2) What were the key elements of the approach?**:  
+    ![FigureDE_2_Bayes](./img/DE_2_Bayes_Approximation.png) 
+      - Use randomized MAP sampling (RMS), where they also adapt the loss for each NN in the DE. A regularization term is added, but has random *error?* for each unique NN.
+      - Apply it to classification when RMS is apply on the parameter space!, which is nice for my use case. But careful need a normal distribution on the likelihood and prior assumption to recover the true posterior distribution.
+      - Approximate the posterior but is complicated, need more read on the paper if I want to use it.
+    - **3) What can I use myself?**:
+      - Adapt my DE an approximated Bayesian Neural Network, and perhaps leverage the GP principle?
+      - So basically RMS to model the *posterior predictive uncertainty?*
+    - **4) What other references do I want to follow?**:
+      - RMS in this paper
+      - Hamiltonian MC
   

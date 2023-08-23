@@ -1,6 +1,8 @@
 ## Conglomerate of notes and ideas collected during my research in the field. 
 *(If u notice an error (i.e., false explanation, statement, reference or whatever) please report it to me.)*
 
+:unicorn: Check this Youtube Video for [Weiwei Pan: What Are Useful Uncertainties in Deep Learning and How Do We Get Them?](https://www.youtube.com/watch?v=kIi6Lm4d9Us)
+
 ### General Notes on Deep Ensemble
 - Deep Ensemble produces more reliable uncertainty estimations than MC Dropout [ref. Masksembles, ref. BatchEnsemble]. Also, experiments have shown that simple ensembles have a low correlation with each other [ref. Masksembles], which is great, since we get diverse predictions for input with simple changes.
 - MC Dropout is mathematically more sound than Deep Ensemble?

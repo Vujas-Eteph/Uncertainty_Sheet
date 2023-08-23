@@ -16,19 +16,19 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [x] Robustness via Cross-Domain Ensembles [[ICCV2021]](<https://arxiv.org/abs/2103.10919>) - [[PyTorch]](<https://github.com/EPFL-VILAB/XDEnsembles>)
 - [x] (MiMO) Training Independent subnetworks for robust prediction [ICLR2021](https://openreview.net/forum?id=OGg9XnKxFAH)
 - [x] Masksembles for Uncertainty Estimation [[CVPR2021]](<https://nikitadurasov.github.io/projects/masksembles/>) - [[PyTorch/TensorFlow]](<https://github.com/nikitadurasov/masksembles>)
-- [ ] Uncertainty Quantification and Deep Ensembles [[NeurIPS2021]](<https://openreview.net/forum?id=wg_kD_nyAF>)
+- [x] Uncertainty Quantification and Deep Ensembles [[NeurIPS2021]](<https://openreview.net/forum?id=wg_kD_nyAF>)
 - [ ] ~~Uncertainty in Gradient Boosting via Ensembles [[ICLR2021]](<https://arxiv.org/abs/2006.10562>) - [[PyTorch]](<https://github.com/yandex-research/GBDT-uncertainty>)~~
 - [ ] ~~Pitfalls of In-Domain Uncertainty Estimation and Ensembling in Deep Learning [[ICLR2020]](<https://arxiv.org/abs/2002.06470>) - [[PyTorch]](<https://github.com/SamsungLabs/pytorch-ensembles>)~~
 - [ ] ~~Maximizing Overall Diversity for Improved Uncertainty Estimates in Deep Ensembles [[AAAI2020]](<https://ojs.aaai.org/index.php/AAAI/article/view/5849>)~~
-- [ ] Hyperparameter Ensembles for Robustness and Uncertainty Quantification [[NeurIPS2020]](<https://proceedings.neurips.cc/paper/2020/hash/481fbfa59da2581098e841b7afc122f1-Abstract.html>) (Design )
+- [x] Hyperparameter Ensembles for Robustness and Uncertainty Quantification [[NeurIPS2020]](<https://proceedings.neurips.cc/paper/2020/hash/481fbfa59da2581098e841b7afc122f1-Abstract.html>) (Design )
 - [ ] ~~Bayesian Deep Ensembles via the Neural Tangent Kernel [[NeurIPS2020]](<https://proceedings.neurips.cc/paper/2020/hash/0b1ec366924b26fc98fa7b71a9c249cf-Abstract.html>)~~
 - [x] BatchEnsemble: An Alternative Approach to Efficient Ensemble and Lifelong Learning [[ICLR2020]](<https://arxiv.org/abs/2002.06715>) - [[TensorFlow]](<https://github.com/google/edward2>) - [[PyTorch]](<https://github.com/giannifranchi/LP_BNN>)
-- [ ] Uncertainty in Neural Networks: Approximately Bayesian Ensembling [[AISTATS 2020]](<https://arxiv.org/abs/1810.05546>) (Might need it to take the uncertainty of the previous frame, in order to use it as prior ??)
+- [x] Uncertainty in Neural Networks: Approximately Bayesian Ensembling [[AISTATS 2020]](<https://arxiv.org/abs/1810.05546>) (Might need it to take the uncertainty of the previous frame, in order to use it as prior ??)
 - [ ] ~~Accurate Uncertainty Estimation and Decomposition in Ensemble Learning [[NeurIPS2019]](<https://papers.nips.cc/paper/2019/hash/1cc8a8ea51cd0adddf5dab504a285915-Abstract.html>)~~
 - [ ] ~~Diversity with Cooperation: Ensemble Methods for Few-Shot Classification [[ICCV2019]](<https://arxiv.org/abs/1903.11341>)~~
 - [ ] ~~High-Quality Prediction Intervals for Deep Learning: A Distribution-Free, Ensembled Approach [[ICML2018]](<https://arxiv.org/abs/1802.07167>) - [[TensorFlow]](<https://github.com/TeaPearce/Deep_Learning_Prediction_Intervals>)~~
 - [ ] ~~Simple and scalable predictive uncertainty estimation using deep ensembles [[NeurIPS2017]](<https://arxiv.org/abs/1612.01474>)~~
-- [ ] Diverse Lottery Tickets Boost Ensemble from a Single Pretrained Mode [[AAAI Not sure 2022]](https://openreview.net/pdf?id=rCzgE3zHL-q)
+- [x] Diverse Lottery Tickets Boost Ensemble from a Single Pretrained Mode [[A Workshop paper? Did not find the conference yet, came out in 2022]](https://openreview.net/pdf?id=rCzgE3zHL-q)
 
 
 ## Auxiliary-Methods/Learning-loss-distributions
