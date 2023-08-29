@@ -32,7 +32,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 
 
 ## Auxiliary-Methods/Learning-loss-distributions
-- [ ] Post-hoc Uncertainty Learning using a Dirichlet Meta-Model [[AAAI2023]](<https://arxiv.org/abs/2212.07359>) - [[PyTorch]](<https://github.com/maohaos2/PosthocUQ>)
+- [x] Post-hoc Uncertainty Learning using a Dirichlet Meta-Model [[AAAI2023]](<https://arxiv.org/abs/2212.07359>) - [[PyTorch]](<https://github.com/maohaos2/PosthocUQ>)
 - [ ] ~~Improving the reliability for confidence estimation [[ECCV2022]](<https://arxiv.org/abs/2210.06776>)~~
 - [ ] Gradient-based Uncertainty for Monocular Depth Estimation [[ECCV2022]](<https://arxiv.org/abs/2208.02005>) - [[PyTorch]](<https://github.com/jhornauer/GrUMoDepth>)
 - [ ] BayesCap: Bayesian Identity Cap for Calibrated Uncertainty in Frozen Neural Networks [[ECCV2022]](<https://arxiv.org/abs/2207.06873>) - [[PyTorch]](<https://github.com/ExplainableML/BayesCap>)
