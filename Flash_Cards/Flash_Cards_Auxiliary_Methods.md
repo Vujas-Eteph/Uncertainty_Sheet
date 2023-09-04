@@ -8,15 +8,7 @@
 Some concepts: 
 
 ## 2023
- - **[Name](Link to openrievew or arxiv) (CONF YYYY)**
-   - **1) What did the authors try to accomplish?**: 
-   - **2) What were the key elements of the approach?**:  
-   - **3) What can I use myself?**:
-   - **4) What other references do I want to follow?**: 
-
-
-## 2022
- - **[Post-hoc Uncertainty Learning using a Dirichlet Meta-Model](https://openreview.net/forum?id=M9vtjDX07Bv&referrer=%5Bthe%20profile%20of%20Maohao%20Shen%5D(%2Fprofile%3Fid%3D~Maohao_Shen1))) (AAAI 2022)**
+ - **[Post-hoc Uncertainty Learning using a Dirichlet Meta-Model](https://openreview.net/forum?id=M9vtjDX07Bv&referrer=%5Bthe%20profile%20of%20Maohao%20Shen%5D(%2Fprofile%3Fid%3D~Maohao_Shen1))) (AAAI 2023)**
    - **1) What did the authors try to accomplish?**: 
      - Quantify the uncertainty post-hoc (after training the Backbone Neural Network) without using new training data or training the NN from scratch.
      - Estimate epistemic and aleatoric uncertainty
@@ -33,7 +25,15 @@ Some concepts:
      - DEUP (Jain et al. 2020??)
      - LULA (Laplace Approximation Kristiadi et al. 2021)
      - ELBO Loss
+  
+ - **[Name](Link to openrievew or arxiv) (CONF YYYY)**
+   - **1) What did the authors try to accomplish?**: 
+   - **2) What were the key elements of the approach?**:  
+   - **3) What can I use myself?**:
+   - **4) What other references do I want to follow?**: 
 
+
+## 2022
  - **[Gradient-based Uncertainty for Monocular Depth Estimation](<https://arxiv.org/abs/2208.02005>) (ECCV 2022)**
    - **1) What did the authors try to accomplish?**:
      - UQ on pixel level for Depth Estimation NN, on a post-hoc manner, meaning to retraining the NN. Emphasize on the post-hoc process. A train-free solution !
@@ -50,7 +50,24 @@ Some concepts:
      - Bootstrapped ensembles
      - Evaluating scalable bayesian deep learning methods for robust computer vision (CVPRW 2020).
      - 
-
+ - **[ayesCap: Bayesian Identity Cap for Calibrated Uncertainty in Frozen Neural Networks](<https://arxiv.org/abs/2207.06873>) (ECCV 2022)**
+   - There is also a blog post about their method [Demo](https://www.eml-unitue.de/publication/BayesCap)
+   - **1) What did the authors try to accomplish?**: 
+     - Develope a post-hoc solution for UQ. The idea is to not train BNN as to difficule and instead, rely on a SOTA Deterministic (instead of Probabilistic) NN as backbone, and add the probabilistic aspect as an extension (plus-and-play modulde) to the backbone and only retrain the section, and keep the backbone NN frozen. Seems to yield good results for calibration too.
+   - **2) What were the key elements of the approach?**:  
+     ![FigureBayesCap1](./img/BayesCap_01.png)  
+     ![FigureBayesCap2](./img/BayesCap_02.png)   
+     - The method should be agnistic of the task and model, although they only provide some insight for regression tasks, not discrete task.
+   - **3) What can I use myself?**:
+     - Expand on their work for the classification task ?
+     - Aleatoric uncertainty more present than epistemic uncertainty as the vision NN are trained with large datasets.
+     - They package: BayesCap, or inspire my self. Need to re-read the method section for more details.
+   - **4) What other references do I want to follow?**: 
+     - [Well-Calibrated Regression Uncertainty in Medical Imaging with Deep Learning](https://proceedings.mlr.press/v121/laves20a.html)
+     - Laplace approximation as a post-hoc manner to UQ.
+     - Bayesian auto-encoder.
+     - Test time data augmentation.
+     - Heteroscedastic: En statistique, l'on parle d'hétéroscédasticité lorsque les variances des résidus des variables examinées sont différentes. Le mot provient du grec, composé du préfixe hétéro- (« autre »), et de skedasê (« dissipation»).
 ## 2021
  - **[Name](Link to openrievew or arxiv) (CONF YYYY)**
    - **1) What did the authors try to accomplish?**: 
