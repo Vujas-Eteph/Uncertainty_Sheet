@@ -38,7 +38,7 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 - [x] BayesCap: Bayesian Identity Cap for Calibrated Uncertainty in Frozen Neural Networks [[ECCV2022]](<https://arxiv.org/abs/2207.06873>) - [[PyTorch]](<https://github.com/ExplainableML/BayesCap>)
 - [ ] ~~Detecting Misclassification Errors in Neural Networks with a Gaussian Process Model [[AAAI2022]](<https://ojs.aaai.org/index.php/AAAI/article/view/20773>)~~
 - [ ] ~~Pitfalls of Epistemic Uncertainty Quantification through Loss Minimisation [[NeurIPS2022]](<https://openreview.net/pdf?id=epjxT_ARZW5>)~~
-- [ ] Learning Structured Gaussians to Approximate Deep Ensembles [[CVPR2022]](<https://arxiv.org/abs/2203.15485>)
+- [x] Learning Structured Gaussians to Approximate Deep Ensembles [[CVPR2022]](<https://arxiv.org/abs/2203.15485>)
 - [ ] Learning Uncertainty For Safety-Oriented Semantic Segmentation In Autonomous Driving [[ICIP2022]](<https://arxiv.org/abs/2105.13688>)
 - [ ] SLURP: Side Learning Uncertainty for Regression Problems [[BMVC2021]](<https://arxiv.org/pdf/2110.11182.pdf>) - [[PyTorch]](<https://github.com/xuanlongORZ/SLURP_uncertainty_estimate>)
 - [ ] Learning to Predict Error for MRI Reconstruction [[MICCAI2021]](<https://arxiv.org/abs/2002.05582>)

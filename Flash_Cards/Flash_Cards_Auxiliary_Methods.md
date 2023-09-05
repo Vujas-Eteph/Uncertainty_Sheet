@@ -50,7 +50,7 @@ Some concepts:
      - Bootstrapped ensembles
      - Evaluating scalable bayesian deep learning methods for robust computer vision (CVPRW 2020).
      - 
- - **[ayesCap: Bayesian Identity Cap for Calibrated Uncertainty in Frozen Neural Networks](<https://arxiv.org/abs/2207.06873>) (ECCV 2022)**
+ - **[BayesCap: Bayesian Identity Cap for Calibrated Uncertainty in Frozen Neural Networks](<https://arxiv.org/abs/2207.06873>) (ECCV 2022)**
    - There is also a blog post about their method [Demo](https://www.eml-unitue.de/publication/BayesCap)
    - **1) What did the authors try to accomplish?**: 
      - Develope a post-hoc solution for UQ. The idea is to not train BNN as to difficule and instead, rely on a SOTA Deterministic (instead of Probabilistic) NN as backbone, and add the probabilistic aspect as an extension (plus-and-play modulde) to the backbone and only retrain the section, and keep the backbone NN frozen. Seems to yield good results for calibration too.
@@ -68,6 +68,19 @@ Some concepts:
      - Bayesian auto-encoder.
      - Test time data augmentation.
      - Heteroscedastic: En statistique, l'on parle d'hétéroscédasticité lorsque les variances des résidus des variables examinées sont différentes. Le mot provient du grec, composé du préfixe hétéro- (« autre »), et de skedasê (« dissipation»).
+  - **[Learning Structured Gaussians to Approximate Deep Ensembles](<https://arxiv.org/abs/2203.15485>) (CVPR 2022)**
+   - **1) What did the authors try to accomplish?**: 
+     - Estimate the uncertainty for Depth Map estimators. Leverage Distillation Ensemble, where only one model is trained to learn to estimate the prediction output of an ensemble. 
+   - **2) What were the key elements of the approach?**:  
+     ![FigureBayesCap1](./img/SUPN.png)  
+    - Ensemble distillation, another NN that works with sparse multivariate gaussians 
+   - **3) What can I use myself?**:
+     - Mostly the Ensemble distillation idea
+     - The limitation of implicit approaches for my introduction or related work.
+   - **4) What other references do I want to follow?**: 
+     - Cholesky-Decomposition
+     - Reference number [22] of the paper (per pixel variance): Real-time uncertainty estimation in computer vision via uncertainty-aware distribution distillation.  
+     - Structured Uncertainty Prediction Networks (SUPN) but for generative models...
 ## 2021
  - **[Name](Link to openrievew or arxiv) (CONF YYYY)**
    - **1) What did the authors try to accomplish?**: 
