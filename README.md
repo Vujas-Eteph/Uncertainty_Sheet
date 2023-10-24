@@ -37,6 +37,8 @@
 
 [Laplacian Segmentation Networks: Improved Epistemic Uncertainty from Spatial Aleatoric Uncertainty](https://arxiv.org/pdf/2303.13123.pdf)
 
+[Verified Uncertainty Calibration NeurIPS 2019](https://papers.nips.cc/paper_files/paper/2019/hash/f8c0c968632845cd133308b1a494967f-Abstract.html)
+
 
 ### Conferences to look for 👀
  - [Uncertainty in Artificial Intelligence (UAI)](https://www.auai.org/)
