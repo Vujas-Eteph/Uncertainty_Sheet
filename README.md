@@ -18,6 +18,9 @@
 - Make a .bib file (generate automatically)
 
 
+[ICCV 2021 Paper on TTA](https://openaccess.thecvf.com/content/ICCV2021/papers/Shanmugam_Better_Aggregation_in_Test-Time_Augmentation_ICCV_2021_paper.pdf) --> Take a look for the standard TTA policy.
+
+
 ### 📰 Top News :
 - MUAD Challenge: https://muad-dataset.github.io/
 - ICCV 2023 Workshop on uncertainty: [link](https://uncv2023.github.io/cfp/) / Date of the workshop 10/08/2023
