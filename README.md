@@ -1,5 +1,7 @@
 # Uncertainty Sheet
 
+**Check this:** https://abursuc.github.io/many-faces-reliability/
+
 **Preface**: This repository summarises valuable papers, packages, lectures and others I found during my research and *for* my research. Hence, this repository is not exhaustive. Other alternatives I highly recommend are [awesome-uncertainty-deeplearning](https://github.com/ENSTA-U2IS/awesome-uncertainty-deeplearning), *etc*.
 
 # Video for Uncertainty Quantification (UQ):
