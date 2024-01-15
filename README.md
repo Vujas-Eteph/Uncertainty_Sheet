@@ -2,6 +2,8 @@
 
 **[*[Uncertainty ToolBox](https://uncertainty-toolbox.github.io/)*]**
 
+An old challenge: https://is.mpg.de/fileadmin/user_upload/files/publications/quinonero06epuc_[0].pdf
+
 **Check this:** https://abursuc.github.io/many-faces-reliability/
 
 **Preface**: This repository summarises valuable papers, packages, lectures and others I found during my research and *for* my research. Hence, this repository is not exhaustive. Other alternatives I highly recommend are [awesome-uncertainty-deeplearning](https://github.com/ENSTA-U2IS/awesome-uncertainty-deeplearning), *etc*.
