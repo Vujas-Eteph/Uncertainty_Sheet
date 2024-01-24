@@ -2,7 +2,6 @@ Based on [Awesome Uncertainty in Deep learning](https://github.com/ENSTA-U2IS/aw
 
 [Temperature Scaling](https://github.com/gpleiss/temperature_scaling)
 
-
 ## Ensemble-Methods
 - [ ] ~~Weighted Ensemble Self-Supervised Learning [[ICLR2023]](<https://arxiv.org/pdf/2211.09981.pdf>)~~
 - [x] Agree to Disagree: Diversity through Disagreement for Better Transferability (D-BAT)  [[ICLR2023]](<https://arxiv.org/pdf/2202.04414.pdf>) - [[PyTorch]](<https://github.com/mpagli/Agree-to-Disagree>)
