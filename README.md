@@ -1,5 +1,7 @@
 # Uncertainty Sheet
 
+Great video explaning the basic of EDL [Youtube](https://www.youtube.com/watch?v=420Q4xNX_IM)
+
 **[*[Uncertainty ToolBox](https://uncertainty-toolbox.github.io/)*]**
 
 An old challenge: https://is.mpg.de/fileadmin/user_upload/files/publications/quinonero06epuc_[0].pdf
